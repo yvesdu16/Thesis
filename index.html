@@ -1,0 +1,47 @@
+{% extends "layout.html" %}
+
+{% block main %}
+
+  <p>Make Predictions</p>
+
+  <form action="/" method="post">
+
+    <label for="Gender">Gender</label>
+
+    <input type="number" min="1" id="Gender" name="Gender" />
+
+    <p>
+
+        <label for="Ethnicity">Ethnicity</label>
+
+        <input type="number" min="15" id="Ethinicity" name="Ethnicity">
+
+    <p>
+    <p>
+
+        <label for="Major">Major</label>
+
+        <input type="number" min="20" id="Major" name="Major">
+
+    <p>
+    <p>
+
+        <label for="HomeState">state</label>
+
+        <input type="number" min="50" id="HomeState" name="HomeState">
+
+    <p>
+
+        <button type="submit">submit</button>
+
+    </p>
+
+  </form>
+
+  {% if GPAHoursEarned %}
+
+    <p> You entered {{ Gender }}, {{ Ethnicity }}, {{ Major }} and {{ HomeState }}. We the amount of credit to be earned  to be ${{ GPAHoursEarned }}.</p>
+
+  {% endif %}
+
+{% endblock main %
