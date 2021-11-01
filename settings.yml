@@ -1,0 +1,3 @@
+ServerName : "DESKTOP-MV1T768\SQLEXPRESS"
+Database : "GpaHours"
+Driver : "driver=SQL Server Native Client 11.0"
